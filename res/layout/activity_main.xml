@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="${relativePackage}.${activityClass}">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/listBtn" 
+	       android:text="List Files"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" />
+	   
+	   <Button android:id="@+id/testWriteBtn" 
+           android:text="TestWrite"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttons">
+
+	   <TextView android:id="@+id/txt"
+	       android:text="Result:"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" />
+	   
+    </ScrollView>
+
+</RelativeLayout>
